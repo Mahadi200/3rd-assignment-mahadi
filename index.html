@@ -38,7 +38,7 @@
 
         </ul>
       </div>
-      <div class="navbar-end">
+      <div class="navbar-end  ">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -54,14 +54,16 @@
             <li><a>Blogs</a></li>
             <li><a>Contact US</a></li>
         </div>
-        
-        <i class="fa-solid fa-magnifying-glass bg-gray-50 rounded-full py-1 px-1 mr-2 "></i>
 
-        <i class="fa-solid fa-cart-shopping bg-gray-50 rounded-full py-1 px-1 mr-2 ">
-        </i>
+        <div class=" hidden lg:flex items-center">
+          <i class="fa-solid fa-magnifying-glass bg-gray-50 rounded-full py-1 px-1 mr-2 "></i>
 
-        <a class="btn bg-lime-400 rounded-3xl font-extrabold ">Book Consult <i
-            class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full py-2 px-2"></i></a>
+          <i class="fa-solid fa-cart-shopping bg-gray-50 rounded-full py-1 px-1 mr-2 ">
+          </i>
+
+          <a class="btn bg-lime-400 rounded-3xl font-extrabold ">Book Consult <i
+              class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-full py-2 px-2"></i></a>
+        </div>
       </div>
     </div>
   </header>
@@ -85,17 +87,18 @@
 
   <section class="mt-20">
     <div class="hero bg-base-200 min-h-screen">
-      <div class="hero-content flex-col lg:flex-row-reverse  content-center">
-        <img src="./assets/Rectangle.png" class="max-w-sm rounded-lg shadow-2xl" />
+      <div class="hero-content flex-col lg:flex-row-reverse  content-center relative">
+        <img src="./assets/Rectangle.png" class="max-w-sm rounded-lg shadow-2xl w-full h-full" />
         <div>
-          <div class="reletive "><img src="./assets/Vector.png" alt=""></div>
+          <div class="absolute -top-10 -left-20  none"><img class="hidden lg:block" src="./assets/Vector.png"
+              alt="vect"></div>
 
           <div><button class="bg-white py-1 px-1 rounded-2xl"> <i class="fa-solid fa-arrow-right"></i> About Us</button>
           </div>
-          <div class="text-3xl font-extrabold my-5">
+          <div class="text-3xl font-extrabold my-2">
             We design thoughtful,<br> liveable spaces
           </div>
-          <div class="font-thin text-sm w-96 my-5">The barn house captivates with its blend of rustic charm and
+          <div class="font-thin text-sm w-96 my-2">The barn house captivates with its blend of rustic charm and
             modern sophistication, featuring weathered wood, sleek metal accents.</div>
           <div class="card card-side bg-base-100 px-3 w-96 ">
             <figure>
@@ -124,7 +127,8 @@
   </section>
   <section>
     <div class=" bg-base-200  ">
-      <div class="container hero-content"><button class="bg-white py-1 px-1 rounded-2xl"> <i class="fa-solid fa-arrow-right"></i> How we works</button>
+      <div class="container hero-content">
+        <button class="bg-white py-1 px-3 rounded-2xl"> <i class="fa-solid fa-arrow-right"></i> How we works</button>
       </div>
       <div class="text-center">
         <div class="text-3xl font-extrabold mb-5">Our Works Process</div>
@@ -135,34 +139,118 @@
           metal accents.
         </div>
       </div>
-      <div class=" container hero-content  flex-col lg:flex-row max-width flex  mt-4  ">
+      <div class=" container hero-content  flex-col lg:flex-row max-width flex  mt-4 pb-40 ">
 
-<div class=" w-48 py-4 px-4 rounded-xl bg-red-300 ">
-<img src="./assets/concept.png" alt="concept">
-<div class="font-bold mt-2">Concept</div>
-<div class="text-xs font-thin mt-2 ">The barn house captivates with its blend of rustic charm and modern.</div>
-</div>
-<div class=" w-48 py-4 px-4 rounded-xl bg-amber-300 ">
-<img src="./assets/flow-chart.png" alt="flow-chart">
-<div class="font-bold mt-2">Design Process</div>
-<div class="text-xs font-thin mt-2 ">The barn house captivates with its blend of rustic charm and modern.</div>
-</div>
-<div class=" w-48 py-4 px-4 rounded-xl bg-green-400 ">
-<img src="./assets/vision.png" alt="vision">
-<div class="font-bold mt-2">Supervision</div>
-<div class="text-xs font-thin mt-2 ">The barn house captivates with its blend of rustic charm and modern.</div>
-</div>
-<div class=" w-48 py-4 px-4 rounded-xl bg-blue-400 ">
-<img src="./assets/budget-planning.png" alt="budget">
-<div class="font-bold mt-2">Budget Planning</div>
-<div class="text-xs font-thin mt-2 ">The barn house captivates with its blend of rustic charm and modern.</div>
-</div>
+        <div class=" w-48 py-4 px-4 rounded-xl bg-red-300 ">
+          <img src="./assets/concept.png" alt="concept">
+          <div class="font-bold mt-2">Concept</div>
+          <div class="text-xs font-thin mt-2 ">The barn house captivates with its blend of rustic charm and modern.
+          </div>
+        </div>
+        <div class=" w-48 py-4 px-4 rounded-xl bg-amber-300 ">
+          <img src="./assets/flow-chart.png" alt="flow-chart">
+          <div class="font-bold mt-2">Design Process</div>
+          <div class="text-xs font-thin mt-2 ">The barn house captivates with its blend of rustic charm and modern.
+          </div>
+        </div>
+        <div class=" w-48 py-4 px-4 rounded-xl bg-green-400 ">
+          <img src="./assets/vision.png" alt="vision">
+          <div class="font-bold mt-2">Supervision</div>
+          <div class="text-xs font-thin mt-2 ">The barn house captivates with its blend of rustic charm and modern.
+          </div>
+        </div>
+        <div class=" w-48 py-4 px-4 rounded-xl bg-blue-400 ">
+          <img src="./assets/budget-planning.png" alt="budget">
+          <div class="font-bold mt-2">Budget Planning</div>
+          <div class="text-xs font-thin mt-2 ">The barn house captivates with its blend of rustic charm and modern.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container hero-content">
+      <button class="bg-lime-100 py-1 px-3 rounded-2xl"> <i class="fa-solid fa-arrow-right"></i> Explore our Latest
+        works</button>
+    </div>
+    <div class="container text-center">
+      <h1 class="text-3xl font-extrabold mb-5 ">Our Latest Portfolio</h1>
+      <p class="font-light text-sm">The barn house captivates with its blend of rustic charm and modern sophistication,
+        featuring weathered wood, sleek
+        metal accents.
+      </p>
+    </div>
+
+    <div>
+      <div class="mt-10 grid grid-cols-12   ">
+        <div class="col-span-8   ">
+          <div class="grid grid-cols-12 border-slate-500 py-5 px-5  ">
+            <div class=" col-span-4"><img src="./assets/img1.png" alt="img1"></div>
+            <div class="col-span-8">
+              <h1>Commercial</h1>
+              <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its
+                blend of rustic
+                charm and modern .</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-4 "><img src="./assets/img2.png" alt="img2"></div>
+
+        <div class="col-span-3"><img src="./assets/img3.png" alt="img3"></div>
+
+        <div class="grid col-span-6">
+          <div class=" grid grid-cols-12">
+            <div class="col-span-4 "><img src="./assets/img4.png" alt="img4"></div>
+            <div class="col-span-8 pl-5">
+              <h1>Commercial</h1>
+              <p>The barn house captivates with its blend of rustic charm and modern.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-3"> <img src="./assets/img5.png" alt="img5"></div>
 
       </div>
+  </section>
+
+  <section class="mt-5">
+    <div class=" bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
+      <div class="hero  ">
+        <div class="hero-content text-center">
+          <div class="">
+            <h1 class="text-5xl font-bold">Let’s Discuss Next Project</h1>
+            <p class="py-6">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+              wood, sleek
+              metal accents.
+            </p>
+          </div>
 
 
+        </div>
 
-    </div>
+      </div>
+     
+
+<div class="grid grid-cols-2 justify-center gap-3 place-items-center w-3/5 ">
+  <div>
+    <input type="text" placeholder="First Name*" class="input input-bordered w-full max-w-xs" />
+  </div>
+  <div>
+    <input type="text" placeholder="last  Name*" class="input input-bordered w-full max-w-xs" />
+  </div>
+  <div>
+    <input type="text" placeholder="Phone Number" class="input input-bordered w-full max-w-xs" />
+  </div>
+  <div>
+    <input type="text" placeholder="Email Number" class="input input-bordered w-full max-w-xs" />
+  </div>
+  
+  <div>
+    <textarea class="textarea textarea-bordered" placeholder="Bio"></textarea>
+  </div>
+</div>
   </section>
 
 </body>
